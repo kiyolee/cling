@@ -55,6 +55,8 @@ set(LLVM_LINK_COMPONENTS
   target
   transformutils
   binaryformat
+  passes
+  targetparser
   ${LLVM_TARGETS_TO_BUILD}
 )
 
