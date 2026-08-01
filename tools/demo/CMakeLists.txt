@@ -29,7 +29,7 @@ endif()
 add_executable(cling-demo cling-demo.cpp)
 
 # ...which links against clingInterpreter (and its dependencies).
-target_link_libraries(cling-demo clingInterpreter)
+target_link_libraries(cling-demo clingInterpreter LLVMSupport)
 
 # Provide LLVMDIR to cling-demp.cpp:
 target_compile_options(cling-demo PUBLIC -DLLVMDIR="${LLVM_INSTALL_PREFIX}" -I${LLVM_INSTALL_PREFIX}/include)
